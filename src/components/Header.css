@@ -1,0 +1,15 @@
+.headerContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  background: -webkit-linear-gradient(rgb(0, 13, 83), rgb(20, 22, 21));
+}
+.headerUserName {
+  background: -webkit-linear-gradient(rgb(7, 7, 7) ,  #17f034, rgb(7, 7, 7));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.headerLinks {
+  text-decoration: none;
+}

@@ -1,0 +1,122 @@
+@media (max-width:700px) {
+.profileEditAllContainer {
+  background: -webkit-linear-gradient(rgb(0, 13, 83), rgb(20, 22, 21));
+}
+.editProfileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  height: 100vh;
+}
+.editProfileContainer h1 {
+  margin-top: 5%;
+  font-size: 60px;
+  background: -webkit-linear-gradient(rgb(7, 7, 7) ,  #17f034, rgb(7, 7, 7));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.labelsContainer {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.labelsContainer input {
+  font-size: x-large;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #17f034;
+  padding: 7px;
+  color: #17f034;
+}
+
+.labelsContainer input::placeholder {
+  color: #17f034;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.btnEdit {background-image: linear-gradient(to right, #52c234 0%, rgb(0, 13, 83)  51%, #52c234  100%)}
+.btnEdit {
+   padding: 7px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 3px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btnEdit:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+}
+
+@media (min-width:700px) {
+  .profileEditAllContainer {
+    background: -webkit-linear-gradient(rgb(0, 13, 83), rgb(20, 22, 21));
+  }
+  .editProfileContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    height: 100vh;
+  }
+  .editProfileContainer h1 {
+    margin-top: 1%;
+    font-size: 60px;
+    background: -webkit-linear-gradient(rgb(7, 7, 7) ,  #17f034, rgb(7, 7, 7));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .labelsContainer {
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .labelsContainer input {
+    font-size: x-large;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #17f034;
+    padding: 7px;
+    color: #17f034;
+  }
+  
+  .labelsContainer input::placeholder {
+    color: #17f034;
+    text-align: center;
+    opacity: 0.7;
+  }
+  
+  .btnEdit {background-image: linear-gradient(to right, #52c234 0%, rgb(0, 13, 83)  51%, #52c234  100%)}
+  .btnEdit {
+     font-size: large;
+     padding: 10px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;            
+     box-shadow: 0 0 3px #eee;
+     border-radius: 10px;
+     display: block;
+   }
+  
+   .btnEdit:hover {
+     background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+   }
+  }

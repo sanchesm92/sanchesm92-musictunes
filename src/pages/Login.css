@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@media (max-width:700px) {
+.background-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../images/Anime-girl-listen-music-headphones-city_1920x1200.jpg');
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  position: fixed;
+}
+.loginContainer {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  background: -webkit-linear-gradient(rgb(7, 7, 7) , #17f034, rgb(7, 7, 7));
+  border-radius: 5%;
+  width: 45%;
+  height: 22%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 5px;
+}
+.loginContainer h1 {
+  background: -webkit-linear-gradient(#a39e9e , #9dfaa5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.inputContainer input {
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+}
+
+.inputContainer input::placeholder {
+  color: black;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.btn-grad {background-image: linear-gradient(to right, #52c234 0%, #061700  51%, #52c234  100%)}
+.btn-grad {
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 3px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+ }
+ @media (min-width:700px) {
+  .background-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../images/Anime-girl-listen-music-headphones-city_1920x1200.jpg');
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    position: fixed;
+  }
+  .loginContainer {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background: -webkit-linear-gradient(rgb(7, 7, 7) , #17f034, rgb(7, 7, 7));
+    border-radius: 5%;
+    width: 25%;
+    height: 22%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 5px;
+  }
+  .loginContainer h1 {
+    background: -webkit-linear-gradient(#a39e9e , #9dfaa5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .inputContainer input {
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+  
+  .inputContainer input::placeholder {
+    color: black;
+    text-align: center;
+    opacity: 0.7;
+  }
+  
+  .btn-grad {background-image: linear-gradient(to right, #52c234 0%, #061700  51%, #52c234  100%)}
+  .btn-grad {
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;            
+     box-shadow: 0 0 3px #eee;
+     border-radius: 10px;
+     display: block;
+   }
+  
+   .btn-grad:hover {
+     background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+   }
+   }
