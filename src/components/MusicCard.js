@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import { addSong, removeSong } from '../services/favoriteSongsAPI';
 import Carregando from './Carregando';
+import './MusicCard.css';
 
 class MusicCard extends Component {
   constructor() {
@@ -47,16 +48,17 @@ class MusicCard extends Component {
     const { loading, check } = this.state;
     if (loading) return <Carregando />;
     return (
-      <div>
+      <div className='cardContainer'>
         <p>{trackName}</p>
         <audio data-testid="audio-component" src={ previewUrl } controls>
           <track kind="captions" />
-          O seu navegador não suporta o elemento
+            Your browser doesn't support
           <code>audio</code>
         </audio>
-        <label htmlFor="inputFav">
-          Favorita
+        <label className='form-check-label' htmlFor="inputFav">
+          <span>Favorite</span>
           <input
+            className="form-check-input"
             type="checkbox"
             checked={ check }
             id="inputFav"

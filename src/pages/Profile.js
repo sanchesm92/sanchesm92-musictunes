@@ -30,12 +30,14 @@ class Profile extends Component {
   render() {
     const { user } = this.state;
     return (
-      <div data-testid="page-profile">
+
+      <div className='imgProfileBackground' data-testid="page-profile">
         <Header />
         <div className='profileContainer'>
+        <section className='borderProfile'>
         <p>Profile</p>
         {user && (
-          <div className='profileEditContainer'>
+          <div className='profileEdit'>
             <Link className='linkProfile' to="/profile/edit">Edit Profile</Link>
             <h4>
               {user.name}
@@ -52,7 +54,8 @@ class Profile extends Component {
               data-testid="profile-image"
               />
           </div>)}
-        </div>
+              </section>
+      </div>
       </div>);
   }
 }

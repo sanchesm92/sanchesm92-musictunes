@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import './AlbumCard.css';
 
 class AlbumCard extends Component {
   render() {
@@ -8,22 +9,23 @@ class AlbumCard extends Component {
       collectionId, collectionName, collectionPrice,
       artworkUrl100, releaseDate, trackCount } } = this.props;
     return (
-      <div>
+      <div className='borderCard'>
         <Link
+         className='linkAlbumCard'
           data-testid={ `link-to-album-${collectionId}` }
           to={ { pathname: `/album/${collectionId}`,
             state: { name: artistName, album: collectionName } } }
         >
           More Details
         </Link>
-        <p>{artistId}</p>
+        {/* <p>{artistId}</p> */}
         <p>{artistName}</p>
-        <p>{collectionId}</p>
-        <p>{collectionName}</p>
-        <p>{collectionPrice}</p>
+        {/* <p>{collectionId}</p> */}
+        {/* <p>{collectionPrice}</p> */}
         <img src={ artworkUrl100 } alt={ artistName } />
-        <p>{releaseDate}</p>
-        <p>{trackCount}</p>
+        <p>{collectionName}</p>
+        {/* <p>{releaseDate}</p> */}
+        {/* <p>{trackCount}</p> */}
       </div>
 
     );

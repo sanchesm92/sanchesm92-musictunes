@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Carregando from '../components/Carregando';
 import Header from '../components/Header';
 import { getFavoriteSongs } from '../services/favoriteSongsAPI';
+import './Favorite.css';
 
 class Favorites extends Component {
   constructor() {
@@ -56,22 +57,24 @@ class Favorites extends Component {
   render() {
     const { loading, songsFav, attpage } = this.state;
     if (loading || attpage) return <Carregando />;
-    if (attpage) return <p>Atualiza</p>;
+    if (attpage) return <p>Loading</p>;
     return (
-      <div data-testid="page-favorites">
+      <div className={songsFav && songsFav[5] ? 'favoriteImgContainer' : 'favoriteImgContainer2'} data-testid="page-favorites">
         {songsFav && <Header />}
-        <p>Favorites</p>
+        <div className='favContainer'>
+        <p className='favP'>Favorites</p>
         {songsFav && songsFav.map((song, index) => (
           <div key={ index }>
-            <p>{song.trackName}</p>
+            <p className='trackNameFav'>{song.trackName}</p>
             <audio data-testid="audio-component" src={ song.previewUrl } controls>
               <track kind="captions" />
-              O seu navegador não suporta o elemento
+              Your browser doesn't support
               <code>audio</code>
             </audio>
-            <label htmlFor="inputFav">
-              Favorita
+            <label className='form-check-label' htmlFor="inputFav">
+              <span>Favorite</span>
               <input
+                className='form-check-input'
                 type="checkbox"
                 checked
                 id="inputFav"
@@ -81,6 +84,7 @@ class Favorites extends Component {
               />
             </label>
           </div>))}
+        </div>
       </div>
     );
   }

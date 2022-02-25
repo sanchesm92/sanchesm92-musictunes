@@ -3,6 +3,7 @@ import AlbumCard from '../components/AlbumCard';
 import Carregando from '../components/Carregando';
 import Header from '../components/Header';
 import searchAlbumsAPI from '../services/searchAlbumsAPI';
+import './Search.css';
 
 class Search extends Component {
   constructor() {
@@ -60,33 +61,36 @@ class Search extends Component {
     const { inputValue, buttonDisable, loading,
       apiResult, apiStatus, lastedInput } = this.state;
     return (
-      <div data-testid="page-search">
+      <div className={!apiStatus || !apiResult[0] ? 'searchImgContainer' : 'searchImgContainer2' } data-testid="page-search">
         <Header />
-        <section>
+        <section className='sectionSearch'>
           <label htmlFor="search-artist-input">
             <input
               type="text"
               data-testid="search-artist-input"
-              placeholder="Digite sua pesquisa"
+              placeholder="Ex: Snoop Dogg"
               name="inputValue"
               value={ inputValue }
               onChange={ this.handeChange }
             />
           </label>
           <button
+            className='btnSearch'
             type="submit"
             data-testid="search-artist-button"
             disabled={ buttonDisable }
             onClick={ this.handleClick }
           >
-            Pesquisar
+            Search
           </button>
         </section>
         {loading && <Carregando />}
-        {apiStatus && <p>{`Resultado de álbuns de: ${lastedInput}`}</p>}
+        {apiStatus && <p className='resultTxt' >{`Resultado de álbuns de: ${lastedInput}`}</p>}
+        <section className='sectionResults'>
         {apiStatus ? apiResult
           .map((card, index) => <AlbumCard data={ card } key={ index } />)
-          : <div>Nenhum álbum foi encontrado</div>}
+          : <div>No results</div>}
+        </section>
       </div>
     );
   }

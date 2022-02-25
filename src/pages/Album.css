@@ -1,0 +1,37 @@
+.albumImgContainer {
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../images/Anime-girl-listen-music-headphones-city_1920x1200.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  width: 100vw;
+}
+.albumImgContainer2 {
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../images/Anime-girl-listen-music-headphones-city_1920x1200.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+.txtAlbum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+}
+.txtAlbum p {
+  font-size: large;
+  font-weight: bold;
+  background: -webkit-linear-gradient(rgb(7, 7, 7) , #0f801e, rgb(7, 7, 7));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.songsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}

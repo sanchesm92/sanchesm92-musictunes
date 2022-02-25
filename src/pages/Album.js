@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Header from '../components/Header';
-import getMusics from '../services/musicsAPI';
-import MusicCard from '../components/MusicCard';
+import React, { Component } from 'react';
 import Carregando from '../components/Carregando';
+import Header from '../components/Header';
+import MusicCard from '../components/MusicCard';
 import { getFavoriteSongs } from '../services/favoriteSongsAPI';
+import getMusics from '../services/musicsAPI';
+import './Album.css';
 
 class Album extends Component {
   constructor() {
@@ -39,13 +40,15 @@ class Album extends Component {
     if (!loading) {
       const { artistName, collectionName } = musics[0];
       return (
-        <div data-testid="page-album">
+        <div className={musics[3] ? 'albumImgContainer' : 'albumImgContainer2' } data-testid="page-album">
           <Header />
+          <div className='txtAlbum'>
           <p data-testid="artist-name">{artistName}</p>
           <p data-testid="album-name">{`${artistName}: ${collectionName}`}</p>
+          </div>
           {musics && musics.slice(1)// Idéia de usar o slice retirada da thread do slack feita pelo Leomar da turma 14
             .map((song, indice) => (
-              <div key={ indice }>
+              <div className='songsContainer' key={ indice }>
                 <MusicCard music={ song } allSongs={ musics } />
               </div>))}
         </div>
@@ -55,8 +58,6 @@ class Album extends Component {
   }
 }
 
-// Referencia 1: https://stackoverflow.com/questions/47519612/eslint-match-is-missing-in-props-validation-react-prop-types
-// Referencia 2: https://stackoverflow.com/questions/52531836/failed-prop-type-invalid-prop-match-params-of-type-object-supplied-to-page
 Album.propTypes = {
   location: PropTypes.shape({
     state: PropTypes.shape({

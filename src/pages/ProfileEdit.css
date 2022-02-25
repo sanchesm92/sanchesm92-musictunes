@@ -1,47 +1,58 @@
 @media (max-width:700px) {
 .profileEditAllContainer {
-  background: -webkit-linear-gradient(rgb(0, 13, 83), rgb(20, 22, 21));
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../images/Anime-girl-listen-music-headphones-city_1920x1200.jpg');
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  position: fixed;
+}
+.h1ProfileEdit {
+  font-size: xx-large;
+  background: -webkit-linear-gradient(rgb(7, 7, 7) , #0f801e, rgb(7, 7, 7));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.borderEditProfile {
+  display: flex;
+  justify-content: center;
+  background: -webkit-linear-gradient(rgb(7, 7, 7) , #0f801e, rgb(7, 7, 7));
+  border-radius: 5%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  opacity: 0.93;
+  width: 250px;
 }
 .editProfileContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5%;
-  height: 100vh;
-}
-.editProfileContainer h1 {
-  margin-top: 5%;
-  font-size: 60px;
-  background: -webkit-linear-gradient(rgb(7, 7, 7) ,  #17f034, rgb(7, 7, 7));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  gap: 10px
 }
 .labelsContainer {
-  margin-top: 5%;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+
 }
 .labelsContainer input {
-  font-size: x-large;
+  padding: 5px;
+  font-size: large;
   background: none;
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 1px solid #17f034;
-  padding: 7px;
-  color: #17f034;
+  border-bottom: 1px solid #000000;
+  color: #0f801e;
 }
 
 .labelsContainer input::placeholder {
-  color: #17f034;
+  color: #0f801e;
   text-align: center;
   opacity: 0.7;
 }
-
-.btnEdit {background-image: linear-gradient(to right, #52c234 0%, rgb(0, 13, 83)  51%, #52c234  100%)}
+.btnEdit {background-image: linear-gradient(to right, #52c234 0%, rgb(0, 0, 0)  51%, #52c234  100%)}
 .btnEdit {
-   padding: 7px;
+   padding: 5px;
+   margin-top: 10px;
    text-align: center;
    text-transform: uppercase;
    transition: 0.5s;
@@ -57,11 +68,23 @@
    color: #fff;
    text-decoration: none;
  }
+
 }
 
 @media (min-width:700px) {
   .profileEditAllContainer {
-    background: -webkit-linear-gradient(rgb(0, 13, 83), rgb(20, 22, 21));
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../images/Anime-girl-listen-music-headphones-city_1920x1200.jpg');
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    position: fixed;
+  }
+  .h1ProfileEdit {
+    font-size: xx-large;
+    background: -webkit-linear-gradient(rgb(7, 7, 7) , #0f801e, rgb(7, 7, 7));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   .editProfileContainer {
     display: flex;
@@ -89,19 +112,20 @@
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid #17f034;
+    border-bottom: 1px solid #000000;
     padding: 7px;
-    color: #17f034;
+    color: #0f801e;
   }
   
   .labelsContainer input::placeholder {
-    color: #17f034;
+    color: #0f801e;
     text-align: center;
     opacity: 0.7;
   }
   
-  .btnEdit {background-image: linear-gradient(to right, #52c234 0%, rgb(0, 13, 83)  51%, #52c234  100%)}
+  .btnEdit {background-image: linear-gradient(to right, #52c234 0%, rgb(0, 0, 0)  51%, #52c234  100%)}
   .btnEdit {
+    margin-top: 10px;
      font-size: large;
      padding: 10px;
      text-align: center;

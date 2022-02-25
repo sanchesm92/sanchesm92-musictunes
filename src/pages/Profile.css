@@ -1,93 +1,123 @@
 @media (max-width:700px) {
-.profileEditContainer h4 {
-  font-size: xx-large;
-  background: -webkit-linear-gradient(rgb(7, 7, 7) ,  #17f034, rgb(7, 7, 7));
+.profileContainer h4 {
+  font-size: large;
+  background: -webkit-linear-gradient(rgb(7, 7, 7) , #0f801e, rgb(7, 7, 7));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.profileEditContainer {
+.profileEdit {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  gap: 10px;
 }
-.profileContainer {
-  background: -webkit-linear-gradient(rgb(0, 13, 83), rgb(20, 22, 21));
+.imgProfileBackground {
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../images/Anime-girl-listen-music-headphones-city_1920x1200.jpg');
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  position: fixed;
+}
+.borderProfile {
+  margin-top: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  gap: 30px;
+  border-radius: 5%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 30px;
+  opacity: 0.93;
+}
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .profileContainer p {
-  margin-top: 10%;
   font-size: 60px;
-  background: -webkit-linear-gradient(rgb(7, 7, 7) ,  #17f034, rgb(7, 7, 7));
+  background: -webkit-linear-gradient(rgb(7, 7, 7) , #0f801e, rgb(7, 7, 7));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .linkProfile {
-  font-size: xx-large;
+  font-size: large;
   text-decoration: none;
-  background: -webkit-linear-gradient(rgb(7, 7, 7) ,  #17f034, rgb(7, 7, 7));
+  background: -webkit-linear-gradient(rgb(7, 7, 7) , #0f801e, rgb(7, 7, 7));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.profileEditContainer img {
+.profileContainer img {
   font-size: x-large;
-  background: -webkit-linear-gradient(rgb(7, 7, 7) ,  #17f034, rgb(7, 7, 7));
+  background: -webkit-linear-gradient(rgb(7, 7, 7) , #0f801e, rgb(7, 7, 7));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.profileEditContainer img {
-  width: 13%;
+.profileContainer img {
+  width: 70px;
   border-radius: 20%;
 }
 }
 
 @media (min-width:700px) {
-  .profileEditContainer h4 {
-    font-size: xx-large;
-    background: -webkit-linear-gradient(rgb(7, 7, 7) ,  #17f034, rgb(7, 7, 7));
+  .profileContainer h4 {
+    font-size: x-large;
+    background: -webkit-linear-gradient(rgb(7, 7, 7) , #0f801e, rgb(7, 7, 7));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .profileEditContainer {
+  .profileEdit {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     gap: 10px;
   }
-  .profileContainer {
-    background: -webkit-linear-gradient(rgb(0, 13, 83), rgb(20, 22, 21));
+  .imgProfileBackground {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../images/Anime-girl-listen-music-headphones-city_1920x1200.jpg');
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    position: fixed;
+  }
+  .borderProfile {
+    margin-top: 4%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    gap: 30px;
+    border-radius: 5%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 30px;
+    opacity: 0.93;
+  }
+  .profileContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .profileContainer p {
     margin-top: 5%;
     font-size: 60px;
-    background: -webkit-linear-gradient(rgb(7, 7, 7) ,  #17f034, rgb(7, 7, 7));
+    background: -webkit-linear-gradient(rgb(7, 7, 7) , #0f801e, rgb(7, 7, 7));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .linkProfile {
     font-size: xx-large;
     text-decoration: none;
-    background: -webkit-linear-gradient(rgb(7, 7, 7) ,  #17f034, rgb(7, 7, 7));
+    background: -webkit-linear-gradient(rgb(7, 7, 7) , #0f801e, rgb(7, 7, 7));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .profileEditContainer img {
+  .profileContainer img {
     font-size: x-large;
-    background: -webkit-linear-gradient(rgb(7, 7, 7) ,  #17f034, rgb(7, 7, 7));
+    background: -webkit-linear-gradient(rgb(7, 7, 7) , #0f801e, rgb(7, 7, 7));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .profileEditContainer img {
-    width: 7%;
+  .profileContainer img {
+    width: 70px;
     border-radius: 20%;
   }
   }

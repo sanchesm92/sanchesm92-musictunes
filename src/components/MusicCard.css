@@ -1,0 +1,20 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.cardContainer p {
+  background: -webkit-linear-gradient(rgb(7, 7, 7) , #0f801e, rgb(7, 7, 7));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.form-check-label span {
+  background: -webkit-linear-gradient(rgb(7, 7, 7) , #0f801e, rgb(7, 7, 7));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.form-check-label {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px
+}

@@ -77,8 +77,9 @@ class ProfileEdit extends Component {
     return (
       <div className='profileEditAllContainer' data-testid="page-profile-edit">
         <Header />
-        <div className='editProfileContainer'>
-          <h1>Edit Profile</h1>
+        <section className='profileContainer'>
+        <div className='borderProfile'>
+          <h1 className='h1ProfileEdit'>Edit Profile</h1>
           {redirect ? <Redirect to="/profile" /> : (
             <div className='labelsContainer'>
               <label htmlFor="edit-input-name">
@@ -109,16 +110,16 @@ class ProfileEdit extends Component {
                   value={ inputDescription }
                   data-testid="edit-input-description"
                   onChange={ this.handleChange }
-                />
+                  />
               </label>
               <label htmlFor="edit-input-image">
                 <input
                 placeholder='Url Image'
-                  type="text"
-                  name="inputImage"
-                  value={ inputImage }
-                  data-testid="edit-input-image"
-                  onChange={ this.handleChange }
+                type="text"
+                name="inputImage"
+                value={ inputImage }
+                data-testid="edit-input-image"
+                onChange={ this.handleChange }
                 />
               </label>
               <button
@@ -133,6 +134,7 @@ class ProfileEdit extends Component {
             </div>
           )}
         </div>
+          </section>
       </div>
     );
   }

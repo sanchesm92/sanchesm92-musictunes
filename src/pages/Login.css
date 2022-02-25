@@ -16,20 +16,19 @@
   position: fixed;
 }
 .loginContainer {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  background: -webkit-linear-gradient(rgb(7, 7, 7) , #17f034, rgb(7, 7, 7));
   border-radius: 5%;
-  width: 45%;
-  height: 22%;
+  width: 70%;
+  height: 40%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  padding: 5px;
+  padding: 40px;
+  opacity: 0.93;
 }
 .loginContainer h1 {
-  background: -webkit-linear-gradient(#a39e9e , #9dfaa5);
+  background: -webkit-linear-gradient(rgb(7, 7, 7) , #0f801e, rgb(7, 7, 7));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -39,6 +38,7 @@
   gap: 5px;
 }
 .inputContainer input {
+  color: #0f801e;
   background: none;
   border-top: none;
   border-left: none;
@@ -47,7 +47,7 @@
 }
 
 .inputContainer input::placeholder {
-  color: black;
+  color: #0f801e;
   text-align: center;
   opacity: 0.7;
 }
@@ -83,20 +83,19 @@
     position: fixed;
   }
   .loginContainer {
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    background: -webkit-linear-gradient(rgb(7, 7, 7) , #17f034, rgb(7, 7, 7));
+    gap: 50px;
     border-radius: 5%;
-    width: 25%;
-    height: 22%;
+    width: 30%;
+    height: 40%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    padding: 5px;
+    padding: 40px;
+    opacity: 0.93;
   }
   .loginContainer h1 {
-    background: -webkit-linear-gradient(#a39e9e , #9dfaa5);
+    background: -webkit-linear-gradient(rgb(7, 7, 7) , #0f801e, rgb(7, 7, 7));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -106,6 +105,7 @@
     gap: 5px;
   }
   .inputContainer input {
+    color: #0f801e;
     background: none;
     border-top: none;
     border-left: none;
@@ -114,9 +114,10 @@
   }
   
   .inputContainer input::placeholder {
-    color: black;
+    color: #0f801e;
     text-align: center;
     opacity: 0.7;
+
   }
   
   .btn-grad {background-image: linear-gradient(to right, #52c234 0%, #061700  51%, #52c234  100%)}
